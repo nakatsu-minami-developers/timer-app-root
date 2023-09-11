@@ -1,6 +1,6 @@
 [submodules "api"]
   path = api
-  url = ./api
+  url = https://github.com/nakatsu-minami-developers/timer-app-api
 [submodules "front"]
   path = front
-  url = ./front
+  url = https://github.com/nakatsu-minami-developers/timer-app-front
