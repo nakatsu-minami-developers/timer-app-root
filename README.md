@@ -1,17 +1,24 @@
-# This vue project is started using vite
+# timer-appのルートリポジトリ
+## Submodules
+[front](https://github.com/nakatsu-minami-developers/timer-app-front)
 
-# CSS
-Tailwind CSS, daisyUI
+[api](https://github.com/nakatsu-minami-developers/timer-app-api)
+
 
 # Usage
 ```
-$ git clone git@github.com:shota-nagato/vue3-docker.git
+$ git clone --recurse-submodules git@github.com:nakatsu-minami-developers/timer-app-root.git
 $ docker-compose build
 $ docker-compose run --rm front yarn install
+$ docker-compose run --rm api yarn install
 $ docker-compose up
 ```
+# Front
 
-# Test/Lint
+## CSS
+Tailwind CSS, daisyUI
+
+## Test/Lint
 ```
 # Jest
 $ docker-compose run --rm front yarn test
@@ -22,3 +29,5 @@ $ docker-compose run --rm front yarn lint
 # Prettier
 $ docker-compose run --rm front yarn format
 ```
+
+# Api
