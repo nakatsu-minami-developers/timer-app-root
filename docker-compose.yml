@@ -20,7 +20,7 @@ services:
       - '3000:3000'
       #ホスト側のsrcをコンテナのbackendにマウント
     volumes:
-      - ./backend:/app
+      - ./api:/app
      #起動時のカレントディレクトリ
     working_dir: /app
     command: 
