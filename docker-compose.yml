@@ -23,16 +23,14 @@ services:
       - ./api:/app
      #起動時のカレントディレクトリ
     working_dir: /app
-    command: 
-      sh -c 'npx tsc; npm run nodemon'
-     
+   
   DB:
     image: 'mysql:latest' 
     container_name: mysql-container
     restart: always
     environment: 
       MYSQL_ROOT_PASSWORD: root_pw
-      MYSQL_DATABASE: mysql
+      MYSQL_DATABASE: mydb
       MYSQL_USER: mysql_user
       MYSQL_PASSWORD: mysql_pw
     ports: 
